@@ -1,0 +1,71 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-block-end: var(--space-2xs);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding-block: var(--space-12);
+  padding-inline: var(--space-18);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-muted);
+  border-bottom: 2.5px solid var(--color-transparent);
+  background-color: var(--color-transparent);
+  border-top: none;
+  border-inline: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  position: relative;
+  margin-block-end: calc(-1 * var(--space-2xs));
+  font-family: inherit;
+
+  &:hover {
+    color: var(--color-text);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+.active {
+  font-weight: 700;
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.countBadge {
+  background-color: var(--color-bg);
+  color: var(--color-muted);
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-sm);
+  border-radius: var(--radius-button);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.countBadgeActive {
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+

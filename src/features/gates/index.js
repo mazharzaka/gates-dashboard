@@ -1,0 +1,10 @@
+export { GateCard } from "./components/GateCard";
+export { GateStatusBadge } from "./components/GateStatusBadge";
+export { OccupancySummary } from "./components/OccupancySummary";
+export { GateDetailModal } from "./components/GateDetailModal";
+export { useGates } from "./hooks/useGates.js";
+export { useGateOccupants } from "./hooks/useGateOccupants.js";
+export { gatesService } from "./services/gatesService.js";
+export { initialMockGates } from "./data/mockGates.js";
+export { getGoogleMapsUrl } from "./utils/googleMapsUrl.js";
+export { calculateOccupants } from "./utils/calculateOccupants.js";

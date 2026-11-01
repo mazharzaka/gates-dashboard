@@ -1,0 +1,23 @@
+.container {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.dot {
+  width: 14px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--color-border);
+  transition: all var(--transition-normal);
+}
+
+.active {
+  width: 32px;
+  background-color: var(--color-primary);
+}
+
+.completed {
+  background-color: var(--color-primary-hover);
+}
+

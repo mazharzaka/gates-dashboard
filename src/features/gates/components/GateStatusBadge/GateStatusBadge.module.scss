@@ -1,0 +1,32 @@
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-6);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-button);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.sizeMd {
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-10);
+  font-size: 13px;
+}
+
+.sizeSm {
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-sm);
+  font-size: 12px;
+}
+
+.icon {
+  color: var(--color-text);
+  flex-shrink: 0;
+}
+
+.label {
+  color: var(--color-text);
+}

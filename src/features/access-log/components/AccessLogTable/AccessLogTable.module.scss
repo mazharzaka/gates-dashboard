@@ -1,0 +1,217 @@
+.tableContainer {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.actionBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--space-18);
+  padding-inline: var(--space-lg);
+  border-bottom: 1px solid var(--color-border-subtle);
+  flex-wrap: wrap;
+  gap: var(--space-12);
+}
+
+.titleGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--space-10);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.countBadge {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-muted);
+  background-color: var(--color-bg);
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-sm);
+  border-radius: var(--radius-button);
+}
+
+.loadingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: var(--space-60);
+  padding-inline: var(--space-20);
+  gap: var(--space-12);
+  color: var(--color-muted);
+}
+
+.spinner {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+.loadingText {
+  font-size: 14px;
+}
+
+.emptyWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: var(--space-64);
+  padding-inline: var(--space-20);
+  text-align: center;
+  gap: var(--space-sm);
+}
+
+.emptyIconCircle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  margin-block-end: var(--space-sm);
+}
+
+.emptyTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.emptySubtitle {
+  font-size: 13px;
+  color: var(--color-muted);
+  max-width: 340px;
+}
+
+.tableScroll {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: start;
+  font-size: 14px;
+}
+
+.headerRow {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.th {
+  padding-block: var(--space-14);
+  padding-inline: var(--space-20);
+  font-weight: 600;
+  color: var(--color-muted);
+  font-size: 12px;
+  text-align: start;
+}
+
+.tr {
+  border-bottom: 1px solid var(--color-border-subtle);
+  transition: background-color var(--transition-fast);
+
+  &:hover {
+    background-color: var(--color-surface-hover-subtle);
+  }
+}
+
+.tdPerson {
+  padding-block: var(--space-14);
+  padding-inline: var(--space-20);
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: start;
+}
+
+.tdGate {
+  padding-block: var(--space-14);
+  padding-inline: var(--space-20);
+  text-align: start;
+}
+
+.gateTag {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg);
+  padding-block: clamp(3px, 0.23vw, 4.5px);
+  padding-inline: var(--space-sm);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.tdType {
+  padding-block: var(--space-14);
+  padding-inline: var(--space-20);
+  text-align: start;
+}
+
+.typeIcon {
+  margin-inline-end: var(--space-2xs);
+}
+
+.tdTime {
+  padding-block: var(--space-14);
+  padding-inline: var(--space-20);
+  color: var(--color-muted);
+  font-size: 13px;
+  text-align: start;
+}
+
+.tdRecordedBy {
+  padding-block: var(--space-14);
+  padding-inline: var(--space-20);
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.paginationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--space-14);
+  padding-inline: var(--space-lg);
+  border-top: 1px solid var(--color-border-subtle);
+  background-color: var(--color-surface);
+  flex-wrap: wrap;
+  gap: var(--space-12);
+}
+
+.pageInfo {
+  font-size: 13px;
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.pageActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+

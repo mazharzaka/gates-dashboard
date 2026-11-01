@@ -1,0 +1,45 @@
+.text {
+  font-family: var(--font-family-current);
+  margin: 0;
+  text-align: start;
+}
+
+/* Colors from tokens.css */
+.color-primary { color: var(--color-primary); }
+.color-primary0E { color: var(--color-surface-dark); }
+.color-grey900 { color: var(--color-text); }
+.color-grey700 { color: var(--color-text-secondary); }
+.color-grey600 { color: var(--color-muted); }
+.color-grey500 { color: var(--color-muted); }
+.color-grey200 { color: var(--color-border); }
+.color-dark { color: var(--color-text); }
+.color-light { color: var(--color-on-primary); }
+.color-red500 { color: var(--color-danger); }
+.color-error { color: var(--color-danger); }
+
+/* Font weights & typography using Tajawal / Inter */
+.font-400 {
+  font-family: var(--font-family-current);
+  font-weight: var(--font-weight-400);
+}
+.font-500 {
+  font-family: var(--font-family-current);
+  font-weight: var(--font-weight-500);
+}
+.font-600 {
+  font-family: var(--font-family-current);
+  font-weight: var(--font-weight-600);
+}
+.font-700 {
+  font-family: var(--font-family-current);
+  font-weight: var(--font-weight-700);
+}
+
+/* Font sizes */
+.size-11 { font-size: 11px; }
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-20 { font-size: 20px; }
+.size-24 { font-size: 24px; }

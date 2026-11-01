@@ -1,0 +1,95 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  width: 100%;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  text-align: start;
+}
+
+.requiredAsterisk {
+  color: var(--color-danger);
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.startIcon {
+  position: absolute;
+  inset-inline-start: var(--space-12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  pointer-events: none;
+}
+
+.endSlot {
+  position: absolute;
+  inset-inline-end: var(--space-10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 100%;
+  padding-block: var(--space-10);
+  padding-inline: var(--space-14);
+  border-radius: var(--radius-input);
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-size: 14px;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  text-align: start;
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-soft);
+  }
+
+  &.hasError {
+    border-color: var(--color-danger);
+
+    &:focus-visible {
+      border-color: var(--color-danger);
+      box-shadow: 0 0 0 3px var(--color-danger-soft);
+    }
+  }
+
+  &:disabled {
+    background-color: var(--color-bg);
+    cursor: not-allowed;
+  }
+}
+
+.withStartIcon {
+  padding-inline-start: clamp(38px, 2.97vw, 57px);
+}
+
+.withEndSlot {
+  padding-inline-end: clamp(42px, 3.28vw, 63px);
+}
+
+.errorMessage {
+  font-size: 12px;
+  color: var(--color-danger);
+  font-weight: 500;
+  margin-inline-start: var(--space-2xs);
+  text-align: start;
+}
+

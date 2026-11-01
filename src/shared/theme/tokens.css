@@ -1,0 +1,103 @@
+:root {
+  /* Brand */
+  --color-primary: #D71920;
+  --color-primary-hover: #B5141A;
+  --color-primary-soft: #FDECEC;
+  --color-accent: #C9A55C;
+  --color-accent-soft: rgba(201, 165, 92, 0.15);
+
+  /* Surfaces */
+  --color-bg: #F7F7F8;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F2F2F5;
+  --color-surface-dark: #1C1F2A;
+  --color-surface-hover-subtle: rgba(0, 0, 0, 0.015);
+  --color-transparent: transparent;
+  --color-illustration-shield-bg: #232736;
+  --color-illustration-shield-grad-start: #2E3346;
+  --color-illustration-shield-grad-end: #181B24;
+
+  /* Text */
+  --color-text: #1D1D1D;
+  --color-text-secondary: #4A4A4F;
+  --color-text-muted: #6E6E73;
+  --color-muted: #6E6E73;
+  --color-on-primary: #FFFFFF;
+  --color-text-on-dark-muted: rgba(255, 255, 255, 0.7);
+
+  /* Feedback */
+  --color-success: #1F9D55;
+  --color-success-soft: #E8F7EE;
+  --color-success-border: rgba(31, 157, 85, 0.2);
+  --color-warning: #E08A00;
+  --color-warning-soft: #FEF6E7;
+  --color-warning-border: rgba(224, 138, 0, 0.2);
+  --color-danger: #D64545;
+  --color-danger-soft: #FCE8E8;
+  --color-danger-border: rgba(214, 69, 69, 0.25);
+  --color-danger-border-subtle: rgba(214, 69, 69, 0.2);
+
+  /* Borders */
+  --color-border: #CFCFD4;
+  --color-border-subtle: #E8E8EC;
+  --color-primary-border-subtle: rgba(215, 25, 32, 0.2);
+  --color-illustration-ring: rgba(255, 255, 255, 0.15);
+  --color-illustration-ring-subtle: rgba(255, 255, 255, 0.06);
+
+  /* Shadows */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --shadow-dropdown: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-header: 0 1px 3px rgba(0, 0, 0, 0.03);
+  --shadow-primary-sm: 0 2px 6px rgba(215, 25, 32, 0.3);
+  --shadow-primary-md: 0 2px 8px rgba(215, 25, 32, 0.3);
+  --shadow-illustration: 0 12px 36px rgba(28, 31, 42, 0.25);
+  --shadow-illustration-svg: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+
+  /* Overlays */
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-overlay-white-10: rgba(255, 255, 255, 0.1);
+  --color-overlay-backdrop: rgba(0, 0, 0, 0.45);
+  --color-shadow: rgba(0, 0, 0, 0.15);
+  --color-glow-primary: rgba(215, 25, 32, 0.22);
+  --color-glow-accent: rgba(201, 165, 92, 0.18);
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-input: 8px;
+  --radius-card: 16px;
+  --radius-button: 999px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-ar: "Tajawal", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-en: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-current: var(--font-ar);
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+
+  /* Spacing (Fluid Viewport Clamped: clamp(Npx, Nvw, N*1.5px)) */
+  --space-2xs: clamp(2px, 0.16vw, 3px);
+  --space-xs: clamp(4px, 0.31vw, 6px);
+  --space-6: clamp(6px, 0.47vw, 9px);
+  --space-sm: clamp(8px, 0.63vw, 12px);
+  --space-10: clamp(10px, 0.78vw, 15px);
+  --space-12: clamp(12px, 0.94vw, 18px);
+  --space-14: clamp(14px, 1.09vw, 21px);
+  --space-md: clamp(16px, 1.25vw, 24px);
+  --space-18: clamp(18px, 1.41vw, 27px);
+  --space-20: clamp(20px, 1.56vw, 30px);
+  --space-22: clamp(22px, 1.72vw, 33px);
+  --space-lg: clamp(24px, 1.88vw, 36px);
+  --space-28: clamp(28px, 2.19vw, 42px);
+  --space-xl: clamp(32px, 2.5vw, 48px);
+  --space-2xl: clamp(48px, 3.75vw, 72px);
+  --space-60: clamp(60px, 4.69vw, 90px);
+  --space-64: clamp(64px, 5vw, 96px);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}
